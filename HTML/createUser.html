@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/CSS/styles.css">
+        <script src="/Javascripts/login.js" defer></script>
+
+        
+    </head>
+    <body>
+        <div id="header">
+            <div id="banner"></div>
+            <div id="navbar">
+                <a href="index.html">Home</a>
+                <a href="reimbursements.html">Reimbursements</a>
+                <a href="createUser.html" class ="active">New User</a>
+            </div>
+        </div>
+
+        <div class="createUserForm">
+            <input type="text" placeholder="First Name" id="firstname" /><br>
+            <input type="text" placeholder="Last Name" id="lastname" /><br>
+            <input type="text" placeholder="Email" id="email" /><br>
+            <input type="text" placeholder="Username" id="username" /><br>
+            <input type="password" placeholder="Password" id="password" /><br>
+            <select name="Job Title" id="role_id">
+                <option value="Admin">Admin</option>
+                <option value="FinanceManager">Finance Manager</option>
+                <option value="Employee">Employee</option>
+            </select>
+            <button onclick="submitUser()">Submit</button>
+        </div>
+
+
+    </body>
+</html>
