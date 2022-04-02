@@ -1,26 +1,11 @@
-const BASE_API_URL = "http://localhost:8080/api"
+const BASE_API_URL = "http://localhost:8080/api";
+const RESOURCE_URL = "http://localhost:8080/api/users"
 
-
-
-function getReimbursements(){
-    fetch(`${BASE_API_URL}/reimbursements`)
-        .then((response) => response.json())
-        .then((data) => createReimbursementElements(data));
-    
+function getUsers() {
+  fetch(`${RESOURCE_URL}`)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
 }
 
-window.onload = getReimbursements;
+window.onload = getUsers();
 
-function createReimbursementElements(reimbursementData) {
-    reimbursementData.forEach((reimbursement) => createReimbursement(reimbursement));
-}
-
-
-function createReimbursement(reimbursement){
-
-    const reimbursementEle = document.createElement ("div");
-    reimbursementEle.setAttribute("type", "reimbursement");
-    reimbursementEle.setAttribute("onclick", "flip(this)");
-
-
-}
