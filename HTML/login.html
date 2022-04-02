@@ -9,19 +9,10 @@
         
 
     <head>
-<<<<<<< HEAD
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/CSS/login.css">
-        <script src="/Javascripts/login.js" defer></script>
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/login.js" defer></script>
         
-=======
-        <h1>Reimbursement Portal</h1>
-
-
-        <script src="/Javascripts/script.js"></script>
-
-
->>>>>>> 85ca091c1a72a6025a96158193100f512d36d7a8
     </head>
 
 
@@ -30,7 +21,6 @@
 
     <body>
 
-       
         
         <h2>Please sign in</h2>
 
@@ -46,7 +36,7 @@
         </div>
         <br>
         <div id="login">
-        <form>
+        <form action="/login" method="POST">
             <label for="username">Username:</label>
             <input id="username" name="username" type="text" placeholder="Username" required>
             <br>
@@ -56,7 +46,7 @@
             <br>
             <br>
             <label for="submit"></label>
-            <input id="submit" name="submit" type="button" value="login" onclick =getUsers()>
+            <input id="submit" name="submit" type="button" value="login" onclick=loginUser()>
             
         </form>
         </div>
