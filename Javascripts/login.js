@@ -1,36 +1,77 @@
 const BASE_API_URL = "http://localhost:8080/api";
 const RESOURCE_URL = `${BASE_API_URL}/login`;
 
-async function loginUser(){
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
 
-    const login = {
+//Function to login user
+async function loginUser(){
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    //User object
+    let login = {
         username: username,
-        password:password
+        password: password
+
     }
-        if (login.username && login.password){
+    
+    //Checking if username and password are from same user
+    if (login.username && login.password){
         const currentUserJSON = JSON.stringify(login);
-        console.log();
+        
+        //POST of the user object
         let data = await fetch(RESOURCE_URL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: currentUserJSON
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: currentUserJSON
+          
+    
+      }).then(response => response.json());
+      console.log(data);
+
             
     
-        }).then(response => response.json())
-        .then((data)=>console.log(data))
 
+        
+        //Getting information from the data
+        let {user_id, userRoles} = data;
         console.log(data);
-    }
-    
-        if(response.status == 200){
-    
-        }else{
-    
+        //Storing the data
+        localStorage.setItem('userRoles', userRoles);
+        localStorage.setItem('user_id', JSON.stringify(user_id));
+
+          console.log(userRoles);
+          console.log(user_id);
+
+        //Sending them to website dependent upon role
+        
+        switch (userRoles) {
+
+          case 'Admin':
+            window.location.href = '/HTML/admin.html';
+            break;
+
+          case 'FinanceManager':
+            window.location.href = '/HTML/financeManager.html'
+            break;
+
+          case 'Employee':
+            window.location.href = '/HTML/employee.html'
+            break;
+          
+          default:
+            window.location.href = '/HTML/index.html'
+
         }
-        console.log(currentUserJSON);
+      }
+
+    
+        // if(response.status == 200){
+        //   alert("You have logged in");
+        // }else{
+        //   alert("Login Failed")
+        // }
+        
     }
     
