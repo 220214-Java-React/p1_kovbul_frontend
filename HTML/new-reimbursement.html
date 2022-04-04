@@ -7,35 +7,12 @@
     </head>
     
     <body>
-        <!-- <div id="type_id">
-            <label for="type_id">What Type of Reimbursement is this?</label>
-            <select id="type_id" name="type">
-                <option value="null"></option>
-                <option value="Lodging">Lodging</option>
-                <option value="Travel">Travel</option>
-                <option value="Food">Food</option>
-                <option value="Other">Other</option>
-
-            </select>
-        </div>
-        <br>
-        <div id="amount">
-            <label for="amount">Please Enter an Amount:</label>
-            <input id="amount" name="amount" type="text" placeholder="00.00" >
-        </div>
-        <br>
-        <div id="description">
-            <label for="description">Please enter a Date</label>
-            <input id="date" name="date" type="text" placeholder="yyyy-mm-dd">
-        </div>
-        <br>
-        <div id="submit">
-            <input id="submit" type="submit" onclick=employeeOptions()>
-        </div> -->
         <script>
         console.log(localStorage);
         </script>
+       
         <div class="createReimbursementForm">
+
             <input type="number" placeholder="Amount" id="amount" /><br>
             <input type="text" placeholder="Description" id="description" /><br>
             <select name="Usage" id="type_id">
@@ -45,6 +22,8 @@
                 <option value="Other">Other</option>
             </select>
             <button onclick="employeeOptions()">Submit</button>
+     
+        
         </div>
 
     </body>
