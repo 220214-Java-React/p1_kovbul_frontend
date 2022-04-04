@@ -35,14 +35,14 @@ async function loginUser(){
 
         
         //Getting information from the data
-        let {user_id, userRoles} = data;
+        let {user_ID, userRoles} = data;
         console.log(data);
         //Storing the data
         localStorage.setItem('userRoles', userRoles);
-        localStorage.setItem('user_id', JSON.stringify(user_id));
+        localStorage.setItem('user_ID', user_ID);
 
           console.log(userRoles);
-          console.log(user_id);
+          console.log(user_ID);
 
         //Sending them to website dependent upon role
         
@@ -67,11 +67,11 @@ async function loginUser(){
       }
 
     
-        // if(response.status == 200){
-        //   alert("You have logged in");
-        // }else{
-        //   alert("Login Failed")
-        // }
+        if(response.status == 200){
+          alert("You have logged in");
+        }else{
+          alert("Login Failed")
+        }
         
     }
-    
+  
