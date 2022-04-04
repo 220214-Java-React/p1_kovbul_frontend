@@ -1,0 +1,40 @@
+/* header */
+
+.options h2 {
+    text-align: center;
+    border: solid 3px;
+    margin: 100px;
+}
+
+/* dropdown */
+
+.navbar {
+    border: solid 3px;
+    padding: 10px;
+    text-align:center;
+    
+}
+
+/* register user link */
+
+a[href*='createUser.html']{
+    padding:10px;
+}
+
+/* view user link */
+
+a[href*='1']{
+    padding:10px;
+}
+
+/* update user link */
+
+a[href*='2']{
+    padding:10px;
+}
+
+/* Delete user link */
+
+a[href*='3']{
+    padding:10px;
+}

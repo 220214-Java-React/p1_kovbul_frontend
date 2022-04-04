@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-    
-        <!-- <h1>Reimbursement Portal</h1>
-
-
-        <script src="script.js"></script> -->
-        
+     
 
     <head>
         <meta charset="UTF-8">
@@ -14,35 +8,30 @@
         <script src="/Javascripts/login.js" defer></script>
         
     </head>
-
-
-    
-
-
+        
     <body>
 
+        <div class="header" id="header" >
+            <h1 id="portal-title" class="header-title">Reimbursement Portal</h1>
+                
+                <div id="navbar"  class="banner">
+                    <a href="/HTML/login.html" class="active">Home</a>
+                </div>
+        </div>
         
-        <h2>Please sign in</h2>
+        <div class="signin">
+        <h2>Please Sign in</h2>
 
-        <div id="select user type">
-            <form>
-                <label for="user type">Please select User type:</label>
-                <select id="user type" name="user type">
-                    <option value="Admin">Admin</option>
-                    <option value="Finance Manager">Finance Manager</option>
-                    <option value="Employee">Employee</option>
-                </select>
-            </form>
         </div>
         <br>
-        <div id="login">
+        <div id="login" class="login-info">
         <form action="/login" method="POST">
             <label for="username">Username:</label>
             <input id="username" name="username" type="text" placeholder="Username" required>
             <br>
             <br>
             <label for="password">Password:</label>
-            <input id="password" name="password" type="text" placeholder="Password" required>
+            <input id="password" name="password" type="password" placeholder="Password" required >
             <br>
             <br>
             <label for="submit"></label>

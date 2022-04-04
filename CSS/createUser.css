@@ -1,0 +1,39 @@
+/* user form */
+
+.createUserForm {
+    text-align: center;
+    border: solid 3px;
+    padding: 30px;
+    
+}
+
+/* header */
+
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+/* navbar */
+
+.navbar {
+    border: solid 3px;
+    padding: 10px;
+}
+
+/* home link */
+
+a[href*='login.html']{
+    padding: 10px;
+}
+/* reimbursement link */
+
+a[href*='new-reimbursement.html']{
+    padding: 10px;
+}
+
+/* new user link */
+
+a[href*='createUser.html']{
+    padding: 10px;
+}
