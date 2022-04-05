@@ -41,6 +41,19 @@
 
             </select>
 
+       
+        <script>
+        console.log(localStorage);
+        </script>
+        <div class="createReimbursementForm">
+            <input type="number" placeholder="Amount" id="amount" /><br>
+            <input type="text" placeholder="Description" id="description" /><br>
+            <select name="Usage" id="type_id">
+                <option value="Lodging">Lodging</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Other">Other</option>
+            </select>
             <button onclick="employeeOptions()">Submit</button>
      
         
