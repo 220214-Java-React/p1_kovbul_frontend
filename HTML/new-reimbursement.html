@@ -25,10 +25,13 @@
        
         <div class="createReimbursementForm">
 
+            <label for="amount" class="amount1">Amount:</label>
             <input type="number" placeholder="Amount" id="amount" /><br>
 
+            <label for="description" class="descrip">Description:</label>
             <input type="text" placeholder="Description" id="description" /><br>
 
+            <label for="type" class="type">Select Type:</label>
             <select name="Usage" id="type_id">
 
                 <option value="Lodging">Lodging</option>
@@ -40,8 +43,8 @@
                 <option value="Other">Other</option>
 
             </select>
-
-            <button onclick="employeeOptions()">Submit</button>
+            <br>
+            <button id="submitbutton" onclick="employeeOptions()">Submit Form</button>
      
         
         </div>
