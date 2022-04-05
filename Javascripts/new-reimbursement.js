@@ -2,8 +2,6 @@ const BASE_API_URL = "http://localhost:8080/api";
 const RESOURCE_URL = `${BASE_API_URL}/reimbursements`;
 
 
-
-
 async function newReimbursement(){
     const type = document.getElementById("type").value;
     const amount = document.getElementById("amount").value;
