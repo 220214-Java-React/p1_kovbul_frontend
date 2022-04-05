@@ -17,7 +17,7 @@ async function loginUser(){
     //Checking if username and password are from same user
     if (login.username && login.password){
         const currentUserJSON = JSON.stringify(login);
-        console.log(currentUserJSON)
+        
         //POST of the user object
         let data = await fetch(RESOURCE_URL, {
           method: "POST",
@@ -28,7 +28,7 @@ async function loginUser(){
           
     
       }).then(response => response.json());
-      
+      console.log(data);
 
             
     
