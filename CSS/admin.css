@@ -1,40 +1,83 @@
-/* header */
+/* Body */
 
-.options h2 {
-    text-align: center;
-    border: solid 3px;
-    margin: 100px;
+body {
+    background-color:rgb(167, 165, 165);
 }
 
-/* dropdown */
 
-.navbar {
-    border: solid 3px;
-    padding: 10px;
-    text-align:center;
+
+/*Header */
+
+.options {
+    text-align: center;
+    border: solid 5px black;
+    width: 500px;
+    position: static;
+    margin: 30px auto;
+    background-color: rgb(84, 143, 211);
+
+}
+
+.options h1 {
+    font-family: "cambria";
     
 }
 
-/* register user link */
-
-a[href*='createUser.html']{
-    padding:10px;
+.options h2 {
+    font-size: 25px;
 }
 
-/* view user link */
 
-a[href*='1']{
-    padding:10px;
+/*navbar*/
+
+ul#list-nav {
+    list-style:none;
+    margin: 0px 50px 80px 520px;
+    padding-left: 5px;
+    width: 1000px;
 }
 
-/* update user link */
-
-a[href*='2']{
-    padding:10px;
+ul#list-nav li {
+    display: inline;
 }
 
-/* Delete user link */
-
-a[href*='3']{
-    padding:10px;
+.list-nav li a {
+    font-family: georgia;
+    text-decoration: none;
+    font-size: 13px;
+    width: 120px;
+    background-color:#234925;
+    color:#eee;
+    float: left;
+    text-align: center;
+    border-left: 3px solid #fff;
+    letter-spacing: 1.5px;
+    padding: 15px 25px;
+    padding-bottom: 20px;
+    font-weight:bold;
+    border: solid 2px white;
+    height:20px;
+    
 }
+
+/* log out link */
+
+ .a[href*="login.html"]{
+    
+    height: 30px;
+    font-size: 17px;
+    float: right;
+    
+        
+
+}
+
+/* hover */
+
+ul#list-nav li a:hover {
+    background: #a3e2a3;
+    color: #000;
+}
+
+
+
