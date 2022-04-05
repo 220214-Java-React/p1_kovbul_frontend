@@ -1,39 +1,152 @@
-/* user form */
+/* Body */
 
-.createUserForm {
+body {
+    background-color:rgb(167, 165, 165);
+}
+
+
+
+/*Header */
+
+.header h1 {
     text-align: center;
-    border: solid 3px;
-    padding: 30px;
+    border: solid 5px black;
+    width: 40%;
+    height: 40px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(84, 143, 211);
+
+}
+
+
+/*navbar*/
+
+ul#list-nav {
+    list-style:none;
+    margin-top: 10px;
+    margin-left: 830px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    width: 400px;
+    height:100px;
+}
+
+ul#list-nav li {
+    display: inline;
+}
+
+.list-nav li a {
+    font-family: georgia;
+    text-decoration: none;
+    font-size: 13px;
+    width: 120px;
+    background-color:#234925;
+    color:#eee;
+    float: left;
+    text-align: center;
+    border-left: 3px solid #fff;
+    letter-spacing: 1.5px;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    font-weight:bold;
+    border: solid 2px white;
+    height:20px;
     
 }
 
-/* header */
 
-.header {
+/* user registration */
+
+.createUserForm {
+    border: solid 3px black;
+    padding: 10px;
+    margin-left: 800px;
+    width: 400px;
+    height: 250px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    
+}
+
+.createUserForm input {
+    border: solid 1px black;
+    height: 25px;
+    width: 100px;
     text-align: center;
-    padding: 10px;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+
+
 }
 
-/* navbar */
+.createUserForm label {
+    margin-left: 100px;
+    font-weight: bold;
+    font-family: georgia;
+    font-size: 15px;
 
-.navbar {
-    border: solid 3px;
-    padding: 10px;
 }
 
-/* home link */
-
-a[href*='login.html']{
-    padding: 10px;
-}
-/* reimbursement link */
-
-a[href*='new-reimbursement.html']{
-    padding: 10px;
+#firstname {
+    margin-left: 10px;
 }
 
-/* new user link */
-
-a[href*='createUser.html']{
-    padding: 10px;
+#lastname {
+    margin-left: 12px;
 }
+
+#email {
+    margin-left:50px;
+
+}
+
+#username {
+    margin-left:17px;
+}
+
+#password {
+    margin-left:20px;
+}
+/* hover */
+
+ul#list-nav li a:hover {
+    background: #a3e2a3;
+    color: #000;
+}
+
+/* label for type */
+
+#type {
+    margin-top: 5px;
+    
+    
+
+}
+
+#role_id {
+    padding: 5px;
+    margin-top: 10px;
+    width:106px;
+}
+
+#submitbutton {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 180px;
+    padding: 5px;
+    border: solid 3px rgb(1, 6, 14);
+    font-family: georgia, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+}
+
+

@@ -7,28 +7,46 @@
 
         
     </head>
+
     <body>
         <div id="header" class="header">
+            <h1>Register New User</h1>
+
             <div id="banner"></div>
+
             <div id="navbar" class="navbar">
-                <a href="login.html">Home</a>
-                <a href="new-reimbursements.html">Reimbursements</a>
-                <a href="createUser.html" class ="active">New User</a>
+                <ul id="list-nav" class="list-nav">
+                    <li><a href="admin.html">Home</a></li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
             </div>
         </div>
 
         <div class="createUserForm">
+            <label for="firstname">First Name:</label>
             <input type="text" placeholder="First Name" id="firstname" /><br>
+
+            <label for="lastname">Last Name:</label>
             <input type="text" placeholder="Last Name" id="lastname" /><br>
+
+            <label for="email" id="email1">Email:</label>
             <input type="text" placeholder="Email" id="email" /><br>
+
+            <label for="username">Username:</label>
             <input type="text" placeholder="Username" id="username" /><br>
+
+            <label for="password">Password:</label>
             <input type="password" placeholder="Password" id="password" /><br>
+
+            <label id="type" for="role_id">Type of User:</label>
             <select name="Job Title" id="role_id">
                 <option value="Admin">Admin</option>
                 <option value="FinanceManager">Finance Manager</option>
                 <option value="Employee">Employee</option>
             </select>
-            <button onclick="submitUser()">Submit</button>
+
+            
+            <button id="submitbutton" onclick="submitUser()">Submit</button>
         </div>
 
 
