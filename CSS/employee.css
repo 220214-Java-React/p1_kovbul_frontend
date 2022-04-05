@@ -1,25 +1,82 @@
+/* Body */
+
+body {
+    background-color:rgb(167, 165, 165);
+}
+
+
+
 /*Header */
 
-.title h1 {
+.title {
     text-align: center;
+    border: solid 1px black;
+    width: 500px;
+    position: static;
+    margin: 30px auto;
+    background-color: rgb(84, 143, 211);
+
+}
+
+.title h1 {
+    font-family: "cambria";
     
 }
+
+.title h2 {
+    font-size: 25px;
+}
+
 
 /*navbar*/
 
-#navbar {
-    text-align: center;
-    border: solid 10px;
-    padding: 10px;
-
+ul#list-nav {
+    list-style:none;
+    margin: 30px 20px 30px 690px;
+    padding-left: 5px;
+    width: 525px;
 }
 
-/* employee home page */
+ul#list-nav li {
+    display: inline;
+}
 
-a[href*='employee.html']{
-    padding: 10px;
+.list-nav li a {
+    font-family: georgia;
+    text-decoration: none;
+    font-size: 13px;
+    width: 120px;
+    background-color:#234925;
+    color:#eee;
+    float: left;
+    text-align: center;
+    border-left: 3px solid #fff;
+    letter-spacing: 1.5px;
+    padding: 15px 25px;
+    font-weight:bold;
     
 }
+
+/* log out link */
+
+ .a[href*="login.html"]{
+    
+    height: 30px;
+    font-size: 17px;
+    float: right;
+    
+        
+
+}
+
+/* hover */
+
+ul#list-nav li a:hover {
+    background: #a3e2a3;
+    color: #000;
+}
+
+
 
 /* new reimbursement page */
 

@@ -1,38 +1,58 @@
-
-
 <!DOCTYPE html>
+
 <html>
+
     <head>
+
         <meta charset="UTF-8">
+
         <link rel="stylesheet" href="/CSS/employee.css">
+
         <script src="/Javascripts/employee.js" defer></script>
 
     </head>
     
-    
+    <body>
+
         <div class="title">
-        <h1>How can we help you today?</h1>
-    </div>
+
+            <h1>Welcome!</h1>
+
+            <h2>How can we help you today?</h2>
+
+        </div>
 
         <div id="actions">
+
             <div id="header">
+
                 <div id="banner"></div>
-                <div id="navbar">
-                    <a href="employee.html" class="active">Employee Home Page</a>
-                    <a href="new-reimbursement.html">New Reimbursements</a>
-                    <a href="view-reimbursement.html">View Reimbursements</a>
+
+                <div id="navbar" class="navbar">
+
+                    <ul id="list-nav" class="list-nav">
+                        
+                        <li><a href="new-reimbursement.html">Submit a New Reimbursement</a></li>
+
+                        <li><a href="view-reimbursement.html">View Reimbursements</a></li>
+                        
+                        <li id="logout"><a href="login.html">Log Out</a></li>
+
+                    </ul>
+
                 </div>
 
         </div>
+
         <script>
+
             console.log(localStorage);
+
         </script>
+
     </body>
     
-    
-    
-    
-    
+
     
 </html>
     
