@@ -1,55 +1,67 @@
+/* body */
 
+body {
+    background-color: rgb(167, 165, 165);
+}
 /* header */
 
 .header{
     font-family: Georgia, serif;
-    background-color: lightseagreen;
-    width: 100%;
+    font-size: 30 px;
+    background-color: rgb(84, 143, 211);
+    width: 60%;
+    left: 10%;
     text-align:center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
     padding: 10px;
-    position: relative;
-
-}
-
-/* link for Home page in navbar */
-
-a[href*='login.html'] {
-    color: rgba(255, 255, 255, 0.836);
-    font-weight: bold;
-    position: relative;
-    
-}
-
-/* banner behind navbar */
-
-.banner{
-    font-family:Georgia, serif;
-    font-size: 20px;
-    background-color: mediumblue;
-    padding: 10px;
+    position: static;
     margin: 20px auto;
-    color:darkslategrey;
+    text-transform: uppercase;
+    border: solid 10px rgb(40, 45, 48);
 
 }
+
 
 /*header for sign in*/
 
-.signin h2{
+.header2 h2{
     font-family: Georgia, serif;
     text-align: center;
-    font-size: 20px;
-    background-color: orange;
-    width:auto;
-    height: 30px;
+    font-size: 30px;
+    background-color: rgb(207, 218, 231);
+    width: 275px;
+    height: 40px;
     padding: 10px;
+    position: static;
+    margin: 10px auto;
+    border: solid 4px rgb(40, 45, 48)
 
 }
 
 /*login box*/
 
-
 .login-info{
+    position: relative;
+    margin: 30px auto;
+    padding: 20px 20px 20px;
     text-align:center;
     font-size:20px;
     font-weight:bold;
+    border: solid 2.5px black;
+    width: 300px;
+    letter-spacing: .5px;
+}
+
+/* login button */
+
+.button {
+    padding: 10px;
+    
+    font-size: 13px;
+    font-weight: bolder;
+    width: 75px;
+    height: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
