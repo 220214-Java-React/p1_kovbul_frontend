@@ -28,7 +28,9 @@ async function submitUser() {
     body: newUserJSON,
   });
 
-  if (response.status == 200) {
+  if (response.status == 204) {
+
+    window.location.href = '/HTML/admin.html'
     
   } else {
   }

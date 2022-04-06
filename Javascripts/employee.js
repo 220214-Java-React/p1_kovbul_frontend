@@ -38,7 +38,7 @@ async function employeeOptions() {
   localStorage.setItem("description", reimbDescription);
   console.log(reimbAmount);
 
-  if (data.status == 204) {
-    window.location.href = "/HTML/employee.html";
+ 
+  window.location.href = "/HTML/employee.html";
   }
-}
+
