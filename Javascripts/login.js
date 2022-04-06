@@ -27,44 +27,38 @@ async function loginUser() {
     console.log(data);
 
     // Getting information from the data
-    let {user_ID, userRoles, firstName, lastName} = data;
+    let { user_ID, userRoles, firstName, lastName } = data;
     console.log(data);
     //Storing the data
-    localStorage.setItem('userRoles', userRoles);
-    localStorage.setItem('user_ID', user_ID);
-    localStorage.setItem('firstName', firstName);
-    localStorage.setItem('lastName', lastName);
+    localStorage.setItem("userRoles", userRoles);
+    localStorage.setItem("user_ID", user_ID);
+    localStorage.setItem("firstName", firstName);
+    localStorage.setItem("lastName", lastName);
 
-      console.log(userRoles);
-      console.log(user_ID);
-      console.log(firstName);
-      console.log(lastName);
+    console.log(userRoles);
+    console.log(user_ID);
+    console.log(firstName);
+    console.log(lastName);
 
     // Sending them to website dependent upon role
 
     switch (userRoles) {
-
-      case 'Admin':
-        window.location.href = '/HTML/admin.html';
+      case "Admin":
+        window.location.href = "/HTML/admin.html";
         break;
 
-      case 'FinanceManager':
-        window.location.href = '/HTML/financeManager.html'
+      case "FinanceManager":
+        window.location.href = "/HTML/financeManager.html";
         break;
 
-      case 'Employee':
-        window.location.href = '/HTML/employee.html'
+      case "Employee":
+        window.location.href = "/HTML/employee.html";
         break;
 
       default:
-        window.location.href = '/HTML/index.html'
-
+        window.location.href = "/HTML/index.html";
     }
   }
 
-  if (response.status == 200) {
-    alert("You have logged in");
-  } else {
-    alert("Login Failed");
   }
-}
+
