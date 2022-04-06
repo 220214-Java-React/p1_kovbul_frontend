@@ -7,7 +7,6 @@ async function loginUser(){
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    //User object
     let login = {
         username: username,
         password: password
@@ -25,22 +24,22 @@ async function loginUser(){
               "Content-Type": "application/json"
           },
           body: currentUserJSON
-          
-    
-      }).then(response => response.json());
+          }).then(response => response.json());
       
-
+        
             
-    
+        
 
         
         //Getting information from the data
-        let {user_ID, userRoles} = data;
+        let {user_ID, userRoles, username} = data;
+
+
         console.log(data);
         //Storing the data
         localStorage.setItem('userRoles', userRoles);
         localStorage.setItem('user_ID', user_ID);
-
+    
           console.log(userRoles);
           console.log(user_ID);
 
@@ -65,13 +64,10 @@ async function loginUser(){
 
         }
       }
-
     
-        if(response.status == 200){
-          alert("You have logged in");
-        }else{
-          alert("Login Failed")
-        }
+
+   }
         
-    }
+    
+    
   
