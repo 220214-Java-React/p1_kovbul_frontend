@@ -4,18 +4,25 @@ const BASE_API_URL = "http://localhost:8080/api";
 // var author_id = +localStorage['user_ID']
 // typeof author_id
 
+function getReimbursements() {
+  console.log(localStorage.getItem("user_ID"));
+  console.log(localStorage.getItem("userRoles"));
+  // let person = localStorage.getItem('user_ID');
+  // console.log(person);
 
-function getReimbursements(){
-    console.log(localStorage.getItem('user_ID'))
-    console.log(localStorage.getItem('userRoles'))
-    // let person = localStorage.getItem('user_ID');
-    // console.log(person);
-
-
-    fetch(`${"http://localhost:8080/api/reimbursements?author_id=" + localStorage.getItem('user_ID') + "&role_id=" + localStorage.getItem('userRoles')}`)
-        .then((response) => response.json()).then(data => {
-            var table = `<table>
+  fetch(
+    `${
+      "http://localhost:8080/api/reimbursements?author_id=" +
+      localStorage.getItem("user_ID") +
+      "&role_id=" +
+      localStorage.getItem("userRoles")
+    }`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      var table = `<table>
                 <tr>
+                <th>User ID</th>
                 <th>Amount</th>
                 <th>Description</th>
                 <th>Type</th>
@@ -24,8 +31,10 @@ function getReimbursements(){
                 <th>Status</th>
                 </tr>`;
 
-            var rows = data.map(reimbursements => {
-                return `<tr>
+      var rows = data
+        .map((reimbursements) => {
+          return `<tr>
+                <td>${reimbursements.author_id}</td>
                 <td>${reimbursements.amount}</td>
                 <td>${reimbursements.description}</td>
                 <td>${reimbursements.type_id}</td>
@@ -33,16 +42,16 @@ function getReimbursements(){
                 <td>${reimbursements.resolved}</td>
                 <td>${reimbursements.status_id}</td>
                 </tr>`;
-}).join('');
+        })
+        .join("");
 
-table += rows;
-console.log(table);
-document.querySelector('#app').insertAdjacentHTML('afterbegin', table);
+      table += rows;
+      console.log(table);
+      document.querySelector("#app").insertAdjacentHTML("afterbegin", table);
+    });
 
-        });
 
         
-
 }
 
 getReimbursements();
