@@ -33,10 +33,7 @@ async function loginUser() {
     localStorage.setItem("userRoles", userRoles);
     localStorage.setItem("user_ID", user_ID);
 
-    if (response.status == 401) {
-      alert('login information incorrect')
-      loginUser();
-    }
+    
 
 
 
@@ -59,7 +56,10 @@ async function loginUser() {
         window.location.href = "/HTML/index.html";
     }
   }
-
+if (response.status == 401) {
+      alert('login information incorrect')
+      loginUser();
+    }
  }
 
 

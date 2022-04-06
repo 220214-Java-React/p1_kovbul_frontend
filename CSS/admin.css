@@ -11,7 +11,7 @@ body {
 .options {
     text-align: center;
     border: solid 5px black;
-    width: 500px;
+    width: 650px;
     position: static;
     margin: 30px auto 10px;
     background-color: rgb(84, 143, 211);
@@ -32,7 +32,7 @@ body {
 
 ul#list-nav {
     list-style:none;
-    margin: 0px 20px 80px 780px;
+    margin: 0px 20px 80px 700px;
     padding-left: 5px;
     width: 1000px;
 }

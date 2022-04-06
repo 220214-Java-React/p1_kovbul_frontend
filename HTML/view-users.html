@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/CSS/view-users.css">
+        <script src="/Javascripts/view-users.js" defer></script>
+
+        
+
+        <!--log out command prompt-->
+        <script type="text/javascript">
+           function logout() {
+               
+               if (confirm("Are you sure you want to log out?")) {
+                   alert("Redirecting to log in page");
+               } else {
+                   alert("Cancelled log out");
+                   return false;
+               }
+           }
+       </script>
+
+    </head>
+  
+    <body>
+        <div class="header">
+        <h1> Users </h1>
+        </div>
+
+        <div id="actions">
+            <div id="header">
+                <div id="banner"></div>
+                <div id="navbar" class="navbar">
+                    <ul id="list-nav" class="list-nav">
+                        <li><a href="admin.html">Home</a></li>
+                        <li><a href="createUser.html">Create New User</a></li>
+                        <li id="logout"><a href="login.html" onclick="return logout()">Log Out</a></li>
+                    </ul>
+                </div>
+                <div id="app"></div>
+
+        </div>
+        <div id="content">
+            
+
+        </div>
+
+    </body>
+    
+    
+    
+    
+    
+    
+</html>
+    
