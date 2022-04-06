@@ -32,13 +32,13 @@ async function loginUser() {
     //Storing the data
     localStorage.setItem("userRoles", userRoles);
     localStorage.setItem("user_ID", user_ID);
-    localStorage.setItem("firstName", firstName);
-    localStorage.setItem("lastName", lastName);
 
-    console.log(userRoles);
-    console.log(user_ID);
-    console.log(firstName);
-    console.log(lastName);
+    if (response.status == 401) {
+      alert('login information incorrect')
+      loginUser();
+    }
+
+
 
     // Sending them to website dependent upon role
 
