@@ -50,8 +50,7 @@ function getReimbursements() {
       document.querySelector("#app").insertAdjacentHTML("afterbegin", table);
     });
 
-    
-            
+
         
 }
 

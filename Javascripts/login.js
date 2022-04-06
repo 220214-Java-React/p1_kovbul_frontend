@@ -50,7 +50,7 @@ async function loginUser() {
       case "FinanceManager":
         window.location.href = "/HTML/financeManager.html";
         break;
-
+        
       case "Employee":
         window.location.href = "/HTML/employee.html";
         break;
@@ -60,5 +60,6 @@ async function loginUser() {
     }
   }
 
-  }
+ }
+
 
