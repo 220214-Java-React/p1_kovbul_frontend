@@ -2,28 +2,46 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="/CSS/view-reimbursement.css">
         <script src="/Javascripts/view-reimbursement.js" defer></script>
+
+        <script src="/Javascripts/employee.js" defer></script>
+
+        <!--log out command prompt-->
+        <script type="text/javascript">
+           function logout() {
+               
+               if (confirm("Are you sure you want to log out?")) {
+                   alert("Redirecting to log in page");
+               } else {
+                   alert("Cancelled log out");
+                   return false;
+               }
+           }
+       </script>
 
     </head>
   
     <body>
-        <div class="title">
-        <h1>How can we help you today?</h1>
+        <div class="header">
+        <h1> Reimbursements</h1>
         </div>
 
         <div id="actions">
             <div id="header">
                 <div id="banner"></div>
-                <div id="navbar">
-                    <a href="employee.html">Employee Home Page</a>
-                    <a href="new-reimbursement.html">New Reimbursements</a>
-                    <a href="view-reimbursement.html" class="active">View Reimbursements</a>
+                <div id="navbar" class="navbar">
+                    <ul id="list-nav" class="list-nav">
+                        <li><a href="employee.html">Home</a></li>
+                        <li><a href="new-reimbursement.html">Submit New Reimbursement</a></li>
+                        <li id="logout"><a href="login.html" onclick="return logout()">Log Out</a></li>
+                    </ul>
                 </div>
                 <div id="app"></div>
 
         </div>
         <div id="content">
+            
 
         </div>
 

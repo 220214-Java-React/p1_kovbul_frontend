@@ -2,11 +2,40 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="/CSS/financeManager.css">
         <script src="/Javascripts/view-reimbursement.js" defer></script>
+
+        <script src="/Javascripts/employee.js" defer></script>
+
+        <!--log out command prompt-->
+        <script type="text/javascript">
+           function logout() {
+               
+               if (confirm("Are you sure you want to log out?")) {
+                   alert("Redirecting to log in page");
+               } else {
+                   alert("Cancelled log out");
+                   return false;
+               }
+           }
+       </script>
     </head>
     
     <body>
+
+        <header id="header" class="header">
+            <h1>Reimbursements</h1>
+        </header>
+
+        <div id="navbar" class="navbar">
+            <ul id="list-nav" class="list-nav">
+                <li><a href="0">Update</a></li>
+                <li><a href="login.html" onclick="return logout()">Log Out</a></li>
+            </ul>
+        </div>
+
+        
+
 
         <div id="app" onclick=getReimbursements()></div>
 
@@ -17,6 +46,7 @@
         <!-- <div id="app" onclick=getReimbursements()></div> -->
 
         </div>
+        
     </body>
     
     

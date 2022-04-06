@@ -1,9 +1,8 @@
-const BASE_API_URL = "http://localhost:8080/api"
+const BASE_API_URL = "http://localhost:8080/api";
 
 // localStorage.getItem(user_ID);
 // var author_id = +localStorage['user_ID']
 // typeof author_id
-
 
 
 function getReimbursements(){
@@ -53,7 +52,7 @@ getReimbursements();
 // window.onload = getReimbursements;
 
 // function createReimbursementElements(reimbursementData){
-    
+
 //     reimbursementData.forEach(reimbursement => createReimbursement(reimbursement))
 //     console.log(reimbursementData);
 // }
@@ -79,12 +78,3 @@ getReimbursements();
 //     let stuff = {amount, description};
 //     //console.log(stuff)
 //     window.onload = createReimbursement;
-
-
-
-
-
-
-
-
-
